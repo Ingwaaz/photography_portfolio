@@ -1,0 +1,11 @@
+@import './components/Header/index.scss';
+@import './components/Title/index.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
