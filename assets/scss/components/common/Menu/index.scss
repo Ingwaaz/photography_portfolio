@@ -1,0 +1,78 @@
+.menu {
+  &__button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &--close {
+      background-color: transparent;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 11;
+      color: #fff;
+      transition: 0.4s;
+    }
+  }
+
+  &-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    user-select: none;
+    opacity: 0;
+    transition: 0.4s;
+    background-color: rgba($color: #000, $alpha: 0.8);
+
+    &.active {
+      opacity: 1;
+      user-select: auto;
+      z-index: 10;
+      transition: 0.4s;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-button {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 40px 0px;
+      }
+
+      &-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 200px;
+        width: 80%;
+
+        & > button {
+          background-color: transparent;
+          border: none;
+          text-transform: uppercase;
+
+          & > a {
+            cursor: pointer;
+            font-size: 36px;
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  &-wrapper > div {
+    height: 100vh;
+  }
+}
