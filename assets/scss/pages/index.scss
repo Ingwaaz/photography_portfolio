@@ -1,0 +1,14 @@
+.main {
+  &-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__subtitle {
+      padding-top: 20px;
+      width: 65%;
+      line-height: 30px;
+    }
+  }
+}

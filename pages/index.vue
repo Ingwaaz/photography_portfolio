@@ -1,22 +1,32 @@
 <template>
-  <main class="container">
-    <div class="main-text">
-      <div class="text__title">
+  <div class="container">
+    <main class="main">
+      <div class="main-text">
         <Title
-          tag="h2"
-          main-text="Привет, меня зовут Юрий!"
-          sub-text="Я фотограф"
+          tag="span"
+          text="Привет, Я Юрий!"
+          size="extralarge"
+          weight="bold"
+          transform="uppercase"
+        />
+        <Subtitle
+          text="Профессиональный фотограф, фотографирую пейзажи и моделей.
+          Все фотографии я делаю на камеру Sony. Свяжитесь со мной ниже"
+          size="large"
+          weight="regular"
+          class="main-text__subtitle"
         />
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Main',
   components: {
-    Title: () => import('@/components/Title')
+    Title: () => import('@/components/common/Title'),
+    Subtitle: () => import('@/components/common/Subtitle')
   }
 }
 </script>

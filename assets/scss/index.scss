@@ -1,11 +1,12 @@
-@import './components/Header/index.scss';
-@import './components/Title/index.scss';
+@import './components/common/index.scss';
+@import './components/blocks/index.scss';
+@import './pages/index.scss';
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
 }
