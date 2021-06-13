@@ -1,0 +1,33 @@
+.contacts {
+  &-text {
+    display: flex;
+    justify-content: space-between;
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+
+      &:nth-child(1) {
+        width: 55%;
+      }
+
+      & > div {
+        display: flex;
+        flex-direction: column;
+
+        & > span {
+          padding-bottom: 5px;
+
+          &:last-child {
+            padding-bottom: 0px;
+          }
+        }
+      }
+  
+      &__subtitle {
+        padding-top: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+}
