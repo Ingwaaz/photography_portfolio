@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: 'Logo',
+  name: 'LogoComponent',
   props: {
     imageSrc: {
       type: String,
