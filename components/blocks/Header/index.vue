@@ -1,9 +1,14 @@
 <template>
-  <header class="header" />
+  <header class="header">
+    <Logo text-logo="YU_RI_NI" />
+  </header>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  components: {
+    Logo: () => import('@/components/common/Logo')
+  }
 }
 </script>

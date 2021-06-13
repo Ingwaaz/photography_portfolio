@@ -1,5 +1,6 @@
 <template>
-  <div class="container">
+  <div class="wrapper">
+    <Header />
     <main class="main">
       <div class="main-text">
         <Title
@@ -25,6 +26,7 @@
 export default {
   name: 'Main',
   components: {
+    Header: () => import('@/components/blocks/Header'),
     Title: () => import('@/components/common/Title'),
     Subtitle: () => import('@/components/common/Subtitle')
   }
