@@ -19,6 +19,9 @@
             class="main-text__subtitle"
           />
         </div>
+        <div class="main-gallery">
+          <Gallery />
+        </div>
       </main>
     </div>
     <FooterBlock />
@@ -32,7 +35,8 @@ export default {
     Header: () => import('@/components/blocks/Header'),
     Title: () => import('@/components/common/Title'),
     Subtitle: () => import('@/components/common/Subtitle'),
-    FooterBlock: () => import('@/components/blocks/FooterBlock')
+    FooterBlock: () => import('@/components/blocks/FooterBlock'),
+    Gallery: () => import('@/components/blocks/Gallery')
   }
 }
 </script>
